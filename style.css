@@ -82,6 +82,10 @@ button:focus {
   box-shadow: 0 0 5px var(--primary-color);
 }
 
+span {
+  margin-right: 0.75rem;
+}
+
 .container {
   height: 100vh;
   display: grid;
@@ -102,7 +106,13 @@ button:focus {
   grid-template-columns: 3fr 2fr;
   grid-template-rows: 1fr, 2fr;
   align-items: center;
+  row-gap: 1.2rem;
   padding: 1rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
 }
 
 .search input {
@@ -119,6 +129,36 @@ button:focus {
   outline: none;
 }
 
+.user-container {
+  justify-self: end;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user-container p {
+  font-weight: bold;
+}
+
+.account-img {
+  font-size: 2rem;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+}
+
+.greeting-user-image span {
+  font-size: 3.5rem;
+}
+
+.user-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
 .sidebar {
   grid-column: 1 / span 1;
   grid-row: 1 / span 2;
@@ -129,6 +169,24 @@ button:focus {
   align-items: center;
   padding: 1rem;
   gap: 2.5rem;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+}
+
+.branding span {
+  font-size: 2.5rem;
+}
+
+.nav li {
+  display: flex;
+  align-items: center;
+}
+
+.nav li span {
+  font-size: 1.75rem;
 }
 
 .main {
@@ -160,6 +218,15 @@ button:focus {
   border-left: 5px solid var(--highlight-orange-color);
   padding: 1rem;
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-icons {
+  text-align: right;
+  color: var(--text-color);
+  margin-top: 0.75rem;
 }
 
 .announcement-card {
@@ -185,6 +252,26 @@ button:focus {
   background-color: var(--secondary-color);
   padding: 1.5rem;
   border-radius: 10px;
+  color: var(--text-color);
+}
+
+.trending-user-container {
+  display: flex;
+  align-items: center;
+  margin: 1.2rem 0;
+}
+
+.trending-user-image {
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
+  text-align: center;
+  padding: 0.6rem;
+  margin-right: 0.5rem;
+}
+
+.trending-user-image span {
+  font-size: 1.6rem;
+  margin-right: 0;
 }
 
 .trending-user {
